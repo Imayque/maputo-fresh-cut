@@ -199,7 +199,59 @@ footer {
 .botao-marcar:hover {
     background: #ffffff;
 }
-</style>```
+    ```css
+.galeria {
+    background: #080808;
+    color: #d4af37;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.galeria h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.galeria p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.corte {
+    background: #151515;
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.corte img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.corte h3 {
+    color: #d4af37;
+    padding: 12px;
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    .galeria-container {
+        grid-template-columns: 1fr;
+    }
+}
+```
+</style>
 </head>
 
 <body>
@@ -219,6 +271,46 @@ footer {
        MARCAR AGORA
     </a>
 </header>
+    ```html
+<section class="galeria">
+    <h2>OS NOSSOS CORTES</h2>
+    <p>O TEU ESTILO, A NOSSA ARTE.</p>
+
+    <div class="galeria-container">
+
+        <div class="corte">
+            <img src="corte1.jpg" alt="Low Fade">
+            <h3>LOW FADE</h3>
+        </div>
+
+        <div class="corte">
+            <img src="corte2.jpg" alt="Mid Fade">
+            <h3>MID FADE</h3>
+        </div>
+
+        <div class="corte">
+            <img src="corte3.jpg" alt="High Fade">
+            <h3>HIGH FADE</h3>
+        </div>
+
+        <div class="corte">
+            <img src="corte4.jpg" alt="Corte clássico">
+            <h3>CLÁSSICO</h3>
+        </div>
+
+        <div class="corte">
+            <img src="corte5.jpg" alt="Corte moderno">
+            <h3>MODERNO</h3>
+        </div>
+
+        <div class="corte">
+            <img src="corte6.jpg" alt="Barba alinhada">
+            <h3>BARBA</h3>
+        </div>
+
+    </div>
+</section>
+```
 
 <main>
 
